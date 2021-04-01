@@ -8,10 +8,9 @@ export function request(config){
     })
   //拦截器
   instance.interceptors.request.use(config=>{
-    // console.log(config);
     return config
   },err=>{
-    console.log(err);
+    // console.log(err);
   })
 
 //响应拦截
@@ -20,7 +19,7 @@ export function request(config){
   },err=>{
     console.log(err);
   })
-    //发送网络请求
+    //  发送网络请求
    return instance(config)
 }
 
